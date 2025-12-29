@@ -215,11 +215,39 @@ function SectionTitle({ title }) {
   );
 }
 
+// function About() {
+//   return (
+//     <section className="section" id="about">
+//       <div className="container">
+//         <SectionTitle title="Meet Akhil" />
+//         <div className="card">
+//           <p>
+//             I’m Akhil Raj — a data scientist who doesn’t just build models, but
+//             builds momentum. I specialize in transforming raw, high-dimensional
+//             data into clear, actionable intelligence that drives decisions,
+//             reduces risk, and unlocks opportunity.
+//           </p>
+//           <p>
+//             My work lives at the intersection of machine learning and data
+//             engineering. From predictive modeling and anomaly detection to
+//             scalable pipelines and real-time dashboards, I bring both technical
+//             depth and clarity to every project, working end-to-end with Python,
+//             SQL, TensorFlow, and cloud platforms.
+//           </p>
+//         </div>
+//       </div>
+//     </section>
+    
+//   );
+// }
+
+
 function About() {
   return (
     <section className="section" id="about">
       <div className="container">
         <SectionTitle title="Meet Akhil" />
+
         <div className="card">
           <p>
             I’m Akhil Raj — a data scientist who doesn’t just build models, but
@@ -227,6 +255,7 @@ function About() {
             data into clear, actionable intelligence that drives decisions,
             reduces risk, and unlocks opportunity.
           </p>
+
           <p>
             My work lives at the intersection of machine learning and data
             engineering. From predictive modeling and anomaly detection to
@@ -235,10 +264,37 @@ function About() {
             SQL, TensorFlow, and cloud platforms.
           </p>
         </div>
+
+        {/* --- Info Cards --- */}
+        <div className="info-cards">
+          <div className="info-card">
+            <h4>Education</h4>
+            <p>Master's in Data Science & Analytics</p>
+          </div>
+
+          <div className="info-card">
+            <h4>Core Strength</h4>
+            <p>Machine Learning, Data Engineering & ETL Pipelines</p>
+          </div>
+
+          <div className="info-card">
+            <h4>Career Goal</h4>
+            <p>Build scalable data + AI systems that drive real business impact</p>
+          </div>
+
+          <div className="info-card">
+            <h4>Passion</h4>
+            <p>Tech Innovation, Science & Sports</p>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
+
+
+
+
 
 function Skills() {
   const groups = useMemo(
@@ -514,15 +570,38 @@ function Contact() {
   );
 }
 
+// function Footer() {
+//   return (
+//     <div className="footer">
+//       <div className="container small">
+//         <span> Boca Raton, FL</span>
+//         © {new Date().getFullYear()} Akhil Raj Akula
+//       </div>
+//     </div>
+//   );
+// }
+
 function Footer() {
   return (
     <div className="footer">
       <div className="container small">
+        <span>Boca Raton, FL • </span>
+        {/* <a href="tel:+1XXXXXXXXXX">+1 (XXX) XXX-XXXX</a> •{" "} */}
+        <a
+          href="https://www.linkedin.com/in/akhil789123a1/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <br />
         © {new Date().getFullYear()} Akhil Raj Akula
       </div>
     </div>
   );
 }
+
+
 
 function App() {
   return (

@@ -500,3 +500,46 @@ textarea {
   margin-bottom: 18px;  
 }
 
+
+
+
+.info-cards {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.info-card {
+  
+   background: rgba(15, 23, 42, 0.75);
+  
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 14px 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+  transition: 0.25s ease-in-out;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.18);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.45);
+}
+
+.info-icon {
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.info-card h4 {
+  color: #3ce5c4;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.info-card p {
+  color: #e3edf7;
+  font-size: 13px;
+}
