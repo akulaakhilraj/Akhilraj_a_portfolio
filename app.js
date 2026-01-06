@@ -199,7 +199,8 @@ function Hero() {
                 className="photo-img"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
-                  e.currentTarget.src = `https://lh3.googleusercontent.com/d/${FILE_ID}`;
+                  e.currentTarget.src = "https://lh3.googleusercontent.com/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW"
+;
                 }}
               />
             </div>
