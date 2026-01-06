@@ -120,9 +120,11 @@ function Navbar() {
 // }
 
 function Hero() {
-  //const FILE_ID = "https://drive.google.com/file/d/13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy/view?usp=sharing"; // your drive photo
-  //const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
-  const profileUrlLink="https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=sharing"
+//const FILE_ID = "1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW"; 
+  const profileUrl = `https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view`;
+ // const profileUrl="https://drive.google.com/file/d/1Arv1iC7u7UuOffYp1qR1UVkRgMJGmASW/view?usp=sharing"
+
+
 
 
   const roles = [
@@ -192,7 +194,7 @@ function Hero() {
           <div className="photo-orbit">
             <div className="photo-circle">
               <img
-                src={profileUrlLink}
+                src={profileUrl}
                 alt="Akhil Raj Akula"
                 className="photo-img"
                 referrerPolicy="no-referrer"
