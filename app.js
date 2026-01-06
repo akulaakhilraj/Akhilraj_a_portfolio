@@ -163,7 +163,7 @@ function Hero() {
             </button>
             <a
               className="btn hero-btn outline"
-              href="https://docs.google.com/document/d/1A1TeFRCW6RCgV7DFYCQapk8Sbrq3HwaW/edit?usp=drive_link&ouid=110423871205248304916&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1dr1_G-xpTMq_uMu_tP9lOov9XtiUudJ-/edit?usp=sharing&ouid=104962097811718616422&rtpof=true&sd=true"
               //"https://drive.google.com/file/d/1lUOa-tGeijzuyvRAN7szNbScPF3NgjMU/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
