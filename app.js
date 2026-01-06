@@ -253,18 +253,10 @@ function About() {
 
         <div className="card">
           <p>
-            I’m Akhil Raj — a data scientist who doesn’t just build models, but
-            builds momentum. I specialize in transforming raw, high-dimensional
-            data into clear, actionable intelligence that drives decisions,
-            reduces risk, and unlocks opportunity.
-          </p>
-
-          <p>
-            My work lives at the intersection of machine learning and data
-            engineering. From predictive modeling and anomaly detection to
-            scalable pipelines and real-time dashboards, I bring both technical
-            depth and clarity to every project, working end-to-end with Python,
-            SQL, TensorFlow, and cloud platforms.
+            I’m Akhil Raj Akula — a data scientist who doesn’t just build models, but builds momentum. I specialize in transforming raw, high-dimensional data into clear, actionable intelligence that drives decisions, reduces risk, and unlocks opportunity.
+        </p>
+        <p>
+            My work lives at the intersection of machine learning, data engineering, and software development. From predictive modeling and anomaly detection to scalable pipelines and real-time analytics, I bring both technical depth and clarity to every project. I work end-to-end using Python, SQL, TensorFlow, Scikit-learn, Pandas, and NumPy, and I build reliable, production-ready solutions using Node.js, JavaScript, React.js, REST APIs, Git, Docker, and AWS/GCP — ensuring my models don’t just work in notebooks, but perform in the real world.
           </p>
         </div>
 
@@ -272,12 +264,12 @@ function About() {
         <div className="info-cards">
           <div className="info-card">
             <h4>Education</h4>
-            <p>Master's in Data Science & Analytics</p>
+            <p>MS in Data Science & Analytics</p>
           </div>
 
           <div className="info-card">
             <h4>Core Strength</h4>
-            <p>Machine Learning, Data Engineering & ETL Pipelines</p>
+            <p>Data Science, Machine Learning, Data Engineering & ETL Pipelines</p>
           </div>
 
           <div className="info-card">
@@ -382,7 +374,7 @@ function Experience() {
             </div>
           </div>
           <div className="experience-right">
-            <h3 className="exp-role">Software Engineer</h3>
+            <h3 className="exp-role">Data Scientist</h3>
             <div className="exp-meta">
               Digient Technology Private Limited, Chennai, India &nbsp;|&nbsp; June 2021 – Nov 2023
             </div>
@@ -410,6 +402,7 @@ function Experience() {
               <span className="badge">SQL</span>
               <span className="badge">Spark</span>
               <span className="badge">Airflow</span>
+              <span className="badge">ELT Pipelines</span>
               <span className="badge">AWS</span>
             </div>
           </div>
@@ -442,11 +435,9 @@ function Experience() {
             <div className="exp-tags">
               <span className="badge">Python</span>
               <span className="badge">SQL</span>
+               <span className="badge">Node.js</span>
               <span className="badge">Kafka</span>
-              <span className="badge">ELT Pipelines</span>
-               <span className="badge">Power BI</span>
               <span className="badge">Data Modeling</span>
-              <span className="badge">Warehousing</span>
             </div>
           </div>
         </div>
@@ -459,19 +450,19 @@ function Experience() {
 function Projects() {
   const projects = [
     {
-      title: "Suspension Travel Depth Estimation",
-      desc: "Built Random Forest and Neural Network models using sensor data. Automated ML pipeline to reduce processing time and improve prediction accuracy.",
-      tags: ["Python", "TensorFlow", "Airflow", "Scikit-learn"],
+      title: "Advanced Machine Learning Regression System for Housing Price Forecasting",
+      desc: "Built an end-to-end ML regression platform for housing price prediction, covering data validation, feature engineering, model development, experiment tracking, real-time inference, automated deployment pipeline, and scalable production deployment",
+      tags: ["Python", "TensorFlow", "Airflow", "Scikit-learn", "MLflow", "FastAPI",'Docker',"GitHub Actions","AWS"],
     },
     {
       title: "Customer Segmentation & Revenue Forecasting",
-      desc: "Segmented customer behavior with K-Means / DBSCAN on large datasets, engineered features, and built dashboards that improved marketing ROI.",
+      desc: "Segmented customer behavior with K-Means on large datasets, engineered features, and built dashboards that improved marketing ROI.",
       tags: ["SQL", "Hive", "Tableau", "Python"],
     },
     {
   title: "Enterprise Data Warehouse & SQL ETL System",
   desc: "Designed bronze–silver–gold warehouse with SQL ETL from CRM/ERP sources; built star schema models and documented pipelines with Git.",
-  tags: ["SQL", "ETL Pipelines", "Data Warehouse", "Star Schema", "Git"]
+  tags: ["SQL", "ETL Pipelines", "Data Warehouse","Star Schema", "Git"]
 }, 
 {
   title: "Dev Tinder Matching App",
