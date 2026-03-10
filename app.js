@@ -43,7 +43,7 @@ const FILE_ID = "13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy"; // ONLY the ID
 const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
 
   const roles = [
-    "Software Engineer", "AI & Data Science Enthusiast"
+     "Data Scientist", "ML Engineer"
   ];
   const [roleIndex, setRoleIndex] = useState(0);
 
@@ -130,31 +130,6 @@ function SectionTitle({ title }) {
   );
 }
 
-// function About() {
-//   return (
-//     <section className="section" id="about">
-//       <div className="container">
-//         <SectionTitle title="Meet Akhil" />
-//         <div className="card">
-//           <p>
-//             I’m Akhil Raj — a data scientist who doesn’t just build models, but
-//             builds momentum. I specialize in transforming raw, high-dimensional
-//             data into clear, actionable intelligence that drives decisions,
-//             reduces risk, and unlocks opportunity.
-//           </p>
-//           <p>
-//             My work lives at the intersection of machine learning and data
-//             engineering. From predictive modeling and anomaly detection to
-//             scalable pipelines and real-time dashboards, I bring both technical
-//             depth and clarity to every project, working end-to-end with Python,
-//             SQL, TensorFlow, and cloud platforms.
-//           </p>
-//         </div>
-//       </div>
-//     </section>
-    
-//   );
-// }
 
 
 function About() {
@@ -175,7 +150,6 @@ function About() {
         </p>
         </div>
 
-        {/* --- Info Cards --- */}
         <div className="info-cards">
           <div className="info-card">
             <h4>Education</h4>
@@ -201,10 +175,6 @@ function About() {
     </section>
   );
 }
-
-
-
-
 
 function Skills() {
   const groups = useMemo(
@@ -239,8 +209,6 @@ function Skills() {
         "Exploratory Data Analysis (EDA)",
         ],
       },
-     
-      
       {
         title: "Cloud & DevOps",
         items: ["AWS", "Docker", "CI/CD","Git", "Postman" ],
@@ -315,9 +283,7 @@ function Experience() {
   <span className="badge">Vector Databases </span>
   <span className="badge">Data Handling </span>
 
-</div>
-
-          </div>
+</div> </div>
         </div>
          
       </div>
@@ -325,7 +291,6 @@ function Experience() {
     
     <section className="section" id="experience">
       <div className="container">
-        <SectionTitle title="Experience" />
         <div className="card experience-card">
           <div className="experience-left">
             <div className="exp-logo-circle">
@@ -433,7 +398,10 @@ function Projects() {
   const projects = [
    {
   title: "Chest CT Scan Disease Classification System",
-  desc: "Built an image classification model using VGG16 transfer learning to detect chest diseases from CT scan images, achieving ~89% validation accuracy. Tracked experiments with MLflow and deployed a Dockerized Flask app on AWS EC2 for real-time predictions.",
+ desc: [
+  "Built a VGG16 transfer learning model to classify chest diseases from CT scan images with ~89% validation accuracy.",
+  "Tracked experiments with MLflow and deployed a Dockerized Flask API on AWS EC2 for real-time predictions."
+],
   tags: [
     "Python",
     "TensorFlow",
@@ -449,7 +417,10 @@ function Projects() {
 
 {
   title: "Object Detection Pipeline",
-  desc: "Developed an object detection system using Faster R-CNN with DVC for data versioning and pipeline management. Tracked training with TensorBoard and deployed a FastAPI service for real-time predictions.",
+ desc: [
+  "Developed an object detection pipeline using Faster R-CNN with PyTorch for accurate object localization.",
+  "Managed data versioning with DVC, monitored training via TensorBoard, and deployed a FastAPI service."
+],
   tags: [
     "Python",
     "PyTorch",
