@@ -260,7 +260,7 @@ function Experience() {
           <div className="experience-right">
             <h3 className="exp-role">Generative AI Engineer, Intern</h3>
             <div className="exp-meta">
-              Think Round Inc, &nbsp;|&nbsp; Feb 2026
+              Think Round Inc,San Francisco, CA &nbsp;|&nbsp; Feb 2026
             </div>
             <p>Assisted in designing and refining generative AI prompts for immersive virtual reality experiences, ensuring inclusivity and meaningful user interactions.</p>
             <ul className="exp-list">
@@ -347,59 +347,13 @@ function Experience() {
 }
 
 
-// function Projects() {
-//   const projects = [
-//     {
-//       title: "ETL and Analytics Pipeline for Retail Data",
-//       desc: "Developed an end-to-end ETL and analytics pipeline to process retail sales, customer, and product data, enabling faster reporting, analytics, and business insights. The project focused on data extraction, transformation, quality validation, and automation of pipelines",
-//       tags: ["Python", "SQL","Pyspark", "Airflow", "DDT", "ETL","Data Modeling",'Docker',"GitHub Actions","AWS"],
-//     },
-//     {
-//       title: "Real-Time Gaming Event Pipeline",
-//       desc: "It focused on streaming ingestion, data transformation, monitoring, and automation of batch and streaming workflows",
-//       tags: ["SQL", "Hive", "Tableau", "Python"],
-//     },
-//     {
-//   title: "Enterprise Data Warehouse & SQL ETL System",
-//   desc: "Designed bronze–silver–gold warehouse with SQL ETL from CRM/ERP sources; built star schema models and documented pipelines with Git.",
-//   tags: ["SQL", "ETL Pipelines", "Data Warehouse","Star Schema", "Git"]
-// }, 
-
-
-
-//   ];
-
-//   return (
-//     <section className="section" id="projects">
-//       <div className="container">
-//         <SectionTitle title="Projects" />
-//         <div className="projects">
-//           {projects.map((p) => (
-//             <div className="card project-card" key={p.title}>
-//               <h3 className="project-title">{p.title}</h3>
-//               <p className="sub">{p.desc}</p>
-//               <div className="badges">
-//                 {p.tags.map((t) => (
-//                   <span className="badge" key={t}>
-//                     {t}
-//                   </span>
-                
-//                 ))}
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 function Projects() {
   const projects = [
    {
   title: "Chest CT Scan Disease Classification System",
  desc: [
-  "Built a VGG16 transfer learning model to classify chest diseases from CT scan images with ~89% validation accuracy.",
+  "Built a VGG16 transfer learning model to classify chest diseases from CT scan images with 89% validation accuracy.",
   "Tracked experiments with MLflow and deployed a Dockerized Flask API on AWS EC2 for real-time predictions."
 ],
   tags: [
@@ -430,8 +384,6 @@ function Projects() {
     "GCP"
   ],
 },
-
-    
   ];
 
   return (
@@ -526,16 +478,7 @@ function Contact() {
   );
 }
 
-// function Footer() {
-//   return (
-//     <div className="footer">
-//       <div className="container small">
-//         <span> Boca Raton, FL</span>
-//         © {new Date().getFullYear()} Akhil Raj Akula
-//       </div>
-//     </div>
-//   );
-// }
+
 
 
 
