@@ -43,7 +43,7 @@ const FILE_ID = "13kRibuvDJVXFJ1mue34dRFChyHNl7Mqy"; // ONLY the ID
 const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
 
   const roles = [
-    "Full-Stack Software Engineer"
+    "Software Engineer", "AI & Data Science Enthusiast"
   ];
   const [roleIndex, setRoleIndex] = useState(0);
 
@@ -65,7 +65,7 @@ const profileUrl = `https://drive.google.com/uc?export=view&id=${FILE_ID}`;
             <span className="hero-ml">{currentRole}</span>
           </div>
           <p className="hero-desc">
-            I build AI-powered analytics tools and scalable full-stack applications using Node.js, React, Python, SQL, and OpenAI APIs.
+            I develop data-driven and AI-powered applications using Python, Node.js, React, and modern LLM technologies to solve real-world problems.
           </p>
           <div className="btn-row">
             <button
@@ -165,13 +165,14 @@ function About() {
 
         <div className="card">
           <p>
-            I’m a software engineer and Generative AI enthusiast who builds full-stack, data-driven applications that deliver actionable insights and scalable solutions. 
-            I specialize in creating AI-powered tools, analytics platforms, and backend services that transform raw data into real-world results.
+           I’m a data-focused engineer who enjoys working with machine learning and real-world datasets to build practical solutions. Most of my work involves developing models, experimenting with data, and deploying applications that make predictions or automate analysis.
         </p>
         <p>
-            My work sits at the intersection of full-stack development, cloud engineering, and Generative AI. From building REST APIs and scalable backend pipelines to integrating LLM-powered workflows and AI-driven analytics, I bring both technical depth and practical implementation skills to every project. 
-          I work end-to-end using Node.js, React.js, Python, SQL, LangChain, OpenAI API, Docker, and AWS, ensuring solutions are production-ready, maintainable, and optimized for performance.
-          </p>
+            One of my recent projects is a Chest CT Scan Disease Classification System, where I built an image classification model using VGG16 to detect diseases from CT scan images. I worked on dataset preparation, model training, experiment tracking with MLflow, and deployed the model as a Dockerized Flask application on AWS so users can upload scans and get predictions quickly.
+        </p>
+        <p>
+          Across these projects I primarily work with Python, PyTorch, SQL, FastAPI, Docker, and cloud platforms like AWS and GCP, focusing on building reliable and scalable data-driven applications.
+        </p>
         </div>
 
         {/* --- Info Cards --- */}
@@ -183,17 +184,17 @@ function About() {
           </div>
           <div className="info-card">
             <h4>Core Strength</h4>
-            <p>Full-Stack Engineering, Generative AI (LLMs), Backend & Analytics Systems</p>
+            <p>Machine Learning, Data Analysis, Generative AI, Backend Systems, Model Deployment</p>
           </div>
 
           <div className="info-card">
             <h4>Career Goal</h4>
-            <p>Build scalable full-stack and AI-powered systems that solve real business problems</p>
+            <p>Build scalable machine learning and data-driven systems that turn data into real-world insights and intelligent applications.</p>
           </div>
 
           <div className="info-card">
             <h4>Passion</h4>
-            <p>Tech Innovation, AI, Science & Sports</p>
+            <p>Tech Innovation, AI, Machine Learning, Data Science, Science & Sports</p>
           </div>
         </div>
       </div>
@@ -208,6 +209,15 @@ function About() {
 function Skills() {
   const groups = useMemo(
     () => [
+       {
+        title: "Machine Learning & AI",
+        items: [" Scikit-learn"," PyTorch ",  "OpenAI API (GPT)",
+"LangChain",
+"Retrieval-Augmented Generation (RAG)",
+"Prompt Engineering",
+"Vector Databases",
+"AI API Integration"],
+      },
       {
         title: "Programming & Backend",
         items: [
@@ -229,19 +239,7 @@ function Skills() {
         "Exploratory Data Analysis (EDA)",
         ],
       },
-      {
-        title: "Generative AI & LLMs",
-        items: ["OpenAI API (GPT)",
-
-"LangChain",
-
-"Retrieval-Augmented Generation (RAG)",
-
-"Prompt Engineering",
-
-"Vector Databases",
-"AI API Integration"],
-      },
+     
       
       {
         title: "Cloud & DevOps",
@@ -249,7 +247,7 @@ function Skills() {
       },
       {
         title: "Visualization & Tools",
-        items: ["Tableau", "Power BI"],
+        items: ["Tableau", "Power BI", "Matplotlib","Seaborn"],
       },
     ],
     []
@@ -281,6 +279,50 @@ function Skills() {
 
 function Experience() {
   return (
+    <>
+     <section className="section" id="experience">
+      <div className="container">
+        <SectionTitle title="Experience" />
+        <div className="card experience-card">
+          <div className="experience-left">
+            <div className="exp-logo-circle">
+              <span className="exp-logo-text">TR</span>
+            </div>
+          </div>
+          <div className="experience-right">
+            <h3 className="exp-role">Generative AI Engineer, Intern</h3>
+            <div className="exp-meta">
+              Think Round Inc, &nbsp;|&nbsp; Feb 2026
+            </div>
+            <p>Assisted in designing and refining generative AI prompts for immersive virtual reality experiences, ensuring inclusivity and meaningful user interactions.</p>
+            <ul className="exp-list">
+              <li>
+               Supported AI model fine-tuning to align content generation with organizational goals of diversity, understanding, and engagement.
+              </li>
+              <li>
+                Collaborated with cross-functional teams to integrate AI models into virtual reality platforms, contributing to seamless and interactive user experiences.
+                </li>
+              <li>
+               Collected, analyzed, and reported on VR interaction data to evaluate AI-generated content effectiveness and suggest improvements.
+              </li>
+            </ul>
+            <div className="exp-tags">
+  <span className="badge">Python </span>
+  <span className="badge">Pytorch </span>
+  <span className="badge">Model Training & Evaluation </span>
+  <span className="badge">LangChain </span>
+  <span className="badge">Prompt Engineering </span>
+  <span className="badge">Vector Databases </span>
+  <span className="badge">Data Handling </span>
+
+</div>
+
+          </div>
+        </div>
+         
+      </div>
+    </section>
+    
     <section className="section" id="experience">
       <div className="container">
         <SectionTitle title="Experience" />
@@ -334,6 +376,8 @@ function Experience() {
          
       </div>
     </section>
+</>
+
   );
 }
 
@@ -387,48 +431,36 @@ function Experience() {
 
 function Projects() {
   const projects = [
-    {
-      title: "Generative AI Powered Analytics Assistant",
-      desc: "Built a full-stack Generative AI application that enables natural-language querying over structured datasets. Implemented Retrieval-Augmented Generation (RAG) workflows to provide context-aware, accurate responses for business analytics use cases.",
-      tags: [
-        "Node.js",
-        "React.js",
-        "Python",
-        "LangChain",
-        "OpenAI API",
-        "RAG",
-        "Vector DB",
-        "SQL",
-        "Docker",
-        "AWS"
-      ],
-    },
-    {
-      title: "Full-Stack Analytics Platform",
-      desc: "Developed a full-stack analytics platform to ingest, process, and visualize structured data from CSV, JSON, and relational sources, enabling self-service reporting and faster decision-making.",
-      tags: [
-        "Node.js",
-        "React.js",
-        "Python",
-        "PostgreSQL",
-        "REST APIs",
-        "Data Modeling",
-        "ETL Pipelines",
-        "Docker"
-      ],
-    },
-    {
-      title: "Enterprise Data Warehouse & SQL ETL System",
-      desc: "Designed a scalable data warehouse using bronze silver–gold layers and built SQL-based ETL pipelines to transform CRM and ERP data into analytics-ready star schema models.",
-      tags: [
-        "SQL",
-        "ETL Pipelines",
-        "Data Warehouse",
-        "Star Schema",
-        "Data Modeling",
-        "Git"
-      ],
-    },
+   {
+  title: "Chest CT Scan Disease Classification System",
+  desc: "Built an image classification model using VGG16 transfer learning to detect chest diseases from CT scan images, achieving ~89% validation accuracy. Tracked experiments with MLflow and deployed a Dockerized Flask app on AWS EC2 for real-time predictions.",
+  tags: [
+    "Python",
+    "TensorFlow",
+    "VGG16",
+    "MLflow",
+    "Flask",
+    "Docker",
+    "AWS EC2",
+    "NumPy",
+    "Pandas"
+  ],
+},
+
+{
+  title: "Object Detection Pipeline",
+  desc: "Developed an object detection system using Faster R-CNN with DVC for data versioning and pipeline management. Tracked training with TensorBoard and deployed a FastAPI service for real-time predictions.",
+  tags: [
+    "Python",
+    "PyTorch",
+    "DVC",
+    "TensorBoard",
+    "FastAPI",
+    "GCP"
+  ],
+},
+
+    
   ];
 
   return (
